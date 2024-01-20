@@ -40,15 +40,13 @@ pip install -r requirements.txt
 
 ## Input Data
 
-The input data is expected to be in the format of the `tbl_coroebus_kpi_data` table with columns:
+The input data is expected to be in the format of the result obtained from the SQL query:
 
-- `id_coroebus_group`
-- `id_coroebus_team`
-- `id_coroebus_user`
-- `score`
-- `id_role`
-- `unit_name`
-- `updated_date_time`
+```sql
+select a.* from tbl_coroebus_kpi_data as a
+where a.id_coroebus_game = 183
+```
+where you can specify id_coroebus_game according to your needs.
 
 ## Output
 
